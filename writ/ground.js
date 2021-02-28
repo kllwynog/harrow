@@ -1,6 +1,6 @@
 var HEADWORD = `
-    <link rel = "stylesheet" type = "text/css" href = "css/reset.css" />
-    <link rel = "stylesheet" type = "text/css" href = "css/style.css" />
+    <link rel = "stylesheet" type = "text/css" href = "wlit/ground.css" />
+    <link rel = "stylesheet" type = "text/css" href = "wlit/wlit.css" />
     <link rel = "shortcut icon" href = "media/favicon.png" />
 `;
 
