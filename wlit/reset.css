@@ -1,0 +1,57 @@
+html, body, div, span, img,
+header, footer, main, nav, article, section,
+h1, h2, h3, h4, h5, h6, p, input,
+ul, ol, dl, li, dt, dd,
+table, tr, th, td,
+strong, em, del, ins, code, pre, sub, sup {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  text-decoration: none;
+  vertical-align: baseline;
+  list-style: none;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+p {
+  margin: 1em 0;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
+
+ins {
+  text-decoration: underline;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+code, pre {
+  font-family: monospace;
+}
+
+sub, sup {
+  font-size: smaller;
+  line-height: 0;
+}
+
+sub {
+  vertical-align: sub;
+}
+
+sup {
+  vertical-align: super;
+}

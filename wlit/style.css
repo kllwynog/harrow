@@ -1,0 +1,439 @@
+@font-face {
+  font-family: gentium;
+  src: url(../media/gentium.ttf);
+}
+
+@font-face {
+  font-family: gentium;
+  src: url(../media/gentium-italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: notosans;
+  src: url(../media/notosans.ttf);
+}
+
+@font-face {
+  font-family: notosans;
+  src: url(../media/notosans-bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: notosans;
+  src: url(../media/notosans-italic.ttf);
+  font-style: italic;
+}
+
+html {
+  background: snow;
+  color: black;
+  font: 13pt notosans;
+}
+
+body {
+  max-width: 48em;
+  margin: 2em auto;
+  padding: 1em;
+}
+
+main {
+  padding-bottom: 1em;
+}
+
+footer {
+  font-size: smaller;
+  text-align: center;
+  border-top: 1px solid black;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 0 0 1em 0;
+}
+
+h2 {
+  font-size: 1.25em;
+}
+
+h3 {
+  font-size: 1.125em;
+}
+
+a {
+  color: forestgreen;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nowrap {
+  white-space: nowrap;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.sc {
+  font-variant: small-caps;
+}
+
+.no-height {
+  line-height: 0;
+}
+
+.small {
+  font-size: small;
+}
+
+.smaller {
+  font-size: smaller;
+}
+
+.large {
+  font-size: large;
+}
+
+.larger {
+  font-size: larger;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.unbold {
+  font-weight: normal;
+}
+
+.flexbox {
+  display: flex;
+}
+
+.flexbox ul, .flexbox div, .flexbox ol {
+  flex-grow: 1;
+}
+
+ul.flexbox li {
+  padding: 0;
+  list-style-type: none;
+}
+
+ul.flexbox li {
+  margin: auto;
+}
+
+.lfloat {
+  float: left;
+}
+
+.rfloat {
+  float: right;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block {
+  margin: 1em 0;
+}
+
+.glow {
+  text-shadow: 0px 0px 9px Lime, 0px 0px 1.5px blue;
+  color: HotPink;
+}
+
+.poem, .hanging {
+  padding-left: 1em;
+  text-indent: -1em;
+}
+
+.feat em {
+  font-style: normal;
+  font-variant: small-caps;
+}
+
+.poem p:first-child:first-letter {
+  font-size: xx-large;
+  line-height: 0;
+}
+
+ul, ol, dl {
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+/* Why can't I tag <ul> instead of <li>? */
+ul li {
+  list-style-type: disc;
+}
+
+ul.none li {
+  list-style-type: none;
+}
+
+ol li {
+  list-style-type: decimal;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin-left: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+th {
+  font-weight: bold;
+}
+
+th, td {
+  padding: 0.25em 0.5em;
+  border: 1px solid black;
+}
+
+.day {
+  text-align: right;
+  display: inline-block;
+  width: 5em;
+}
+
+#hyt-ys-geendod {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+table.ot {
+  background: #fcfcfc;
+  border: 4px groove grey;
+}
+
+table.ot td {
+  padding: 0.25em;
+  text-align: left;
+}
+
+table.ot tr:not(:nth-child(1)) th {
+  font-size: 0.875em;
+  font-weight: normal;
+  text-align: right;
+  padding-right: 8px;
+}
+
+table.ot th.candidate::before {
+  font-size: 24px;
+  content: "\261e  ";
+  line-height: 0;
+  vertical-align: sub;
+  padding-right: 0.1875em;
+}
+
+table.ot tr:nth-child(1) th {
+  width: 5em;
+  padding: 0 0.5em;
+  font-size: 0.875em;
+  text-align: left;
+  font-variant: small-caps;
+  border-bottom: 2px solid black;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) {
+  width: 6em;
+  font-weight: normal;
+  text-align: center;
+  font-variant: normal;
+  font-size: larger;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) em {
+  font-style: normal;
+  display: inline;
+  color: black;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) strong {
+  font-weight: normal;
+  font-size: 0.875em;
+  display: none;
+  color: grey;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1) strong::before, table.ot tr:nth-child(1) th:nth-child(1) strong::after {
+  content: "\2014";
+  padding: 0 0.25em;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1):hover em {
+  display: none;
+}
+
+table.ot tr:nth-child(1) th:nth-child(1):hover strong {
+  display: inline;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(1) {
+  border-right: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(2) {
+  border-left: none;
+}
+
+table.ot tr:not(:nth-child(1)) th:not(:nth-child(1)):not(:nth-child(2)) {
+  background: lightgrey;
+}
+
+table.ot tr:not(:nth-child(1)) th:nth-child(2), table.ot tr:nth-child(1) th:nth-child(1) {
+  border-right: 4px double black;
+}
+
+table.ot th em {
+  color: grey;
+  font-size: smaller;
+}
+
+.ot-001 tr:nth-child(1) th:nth-child(2), .ot-001 tr td:nth-child(3) {
+  border-right: 1px solid #aaa;
+}
+
+.ot-0011 tr:nth-child(1) th:nth-child(2), .ot-0011 tr td:nth-child(3), .ot-0011 tr:nth-child(1) th:nth-child(4), .ot-0011 tr td:nth-child(5),
+.ot-0011 tr:not(:nth-child(1)) th:nth-child(3), .ot-0011 tr:not(:nth-child(1)) th:nth-child(5) {
+  border-right: 1px solid #aaa;
+}
+
+#stead {
+  color: DimGrey;
+}
+
+.kirt, .yarg, .bers, .qufl {
+  color: black;
+  font-weight: bold;
+}
+
+.kirt, .gaa {
+  color: black;
+}
+
+.yarg {
+  color: green;
+}
+
+.bers {
+  color: blue;
+}
+
+.qufl {
+  color: red;
+}
+
+.nuu {
+  color: MediumSeaGreen;
+}
+
+.taj {
+  color: DodgerBlue;
+}
+
+.nhom {
+  color: Tomato;
+}
+
+.def {
+  margin-left: 1em;
+}
+
+.bemark::before, .betoken::before, .truth::before, .callback::before,
+.setting::before, .foreset::before, .witness::before, .follow::before {
+  margin-left: -1em;
+  font-weight: bold;
+}
+
+.bemark::before {
+  content: "Bemarking.";
+}
+
+.betoken::before {
+  content: "Betokening.";
+}
+
+.callback::before {
+  content: "Callback.";
+}
+
+.setting::before {
+  content: "Setting.";
+}
+
+.foreset::before {
+  content: "Foreset.";
+}
+
+.truth::before {
+  content: "Truth.";
+}
+
+.follow::before {
+  content: "Following.";
+}
+
+.witness::before {
+  content: "Witness.";
+}
+
+.witness::after {
+  display: block;
+  text-align: right;
+  font-style: italic;
+  font-size: smaller;
+  content: "and it is fulfilled.";
+}
+
+.faded {
+  color: LightGrey;
+}
+
+.grey {
+  color: grey;
+}
+
+#greath-rank {
+  display: flex;
+}
+
+#greath-rank table:first-child {
+  margin-right: 4em;
+}
+
+#greath-rank table {
+  margin: 0.5em;
+}
+
+#ash-win {
+  text-align: right;
+  font-family: serif;
+}
+
+.tight ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
