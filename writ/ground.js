@@ -3,7 +3,7 @@ STAVES = ["notosans","charis"];
 HEADWORD = `
     <link rel = "stylesheet" type = "text/css" href = "wlit/ground.css" />
     <link rel = "stylesheet" type = "text/css" href = "wlit/wlit.css" />
-    <link rel = "shortcut icon" href = "media/favicon.png" />
+    <link rel = "shortcut icon" href = "bild/token.png" />
 `;
 
 FOOTERWORD = `
