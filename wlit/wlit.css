@@ -1,38 +1,64 @@
-@font-face {
-  font-family: gentium;
-  src: url(../media/gentium.ttf);
+:root {
+  --bg-hue: navy;
+  --mean-hue: white;
+  --link-hue:darkturquoise;
+  --bg-hue: snow;
+  --mean-hue: black;
+  --link-hue: forestgreen;
 }
 
 @font-face {
-  font-family: gentium;
-  src: url(../media/gentium-italic.ttf);
+  font-family: charis;
+  src: url(../bild/CharisSIL-Mean.ttf);
+}
+
+@font-face {
+  font-family: charis;
+  src: url(../bild/CharisSIL-Bold.ttf);
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: charis;
+  src: url(../bild/CharisSIL-Slant.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: charis;
+  src: url(../bild/CharisSIL-BoldSlant.ttf);
+  font-weight: bold;
   font-style: italic;
 }
 
 @font-face {
   font-family: notosans;
-  src: url(../media/notosans.ttf);
+  src: url(../bild/NotoSans-Mean.ttf);
 }
 
 @font-face {
   font-family: notosans;
-  src: url(../media/notosans-bold.ttf);
+  src: url(../bild/NotoSans-Bold.ttf);
   font-weight: bold;
 }
 
 @font-face {
   font-family: notosans;
-  src: url(../media/notosans-italic.ttf);
+  src: url(../bild/NotoSans-Slant.ttf);
   font-style: italic;
 }
 
-html {
-  background: snow;
-  color: black;
-  font: 13pt notosans;
+@font-face {
+  font-family: notosans;
+  src: url(../bild/NotoSans-BoldSlant.ttf);
+  font-weight: bold;
+  font-style: italic;
 }
 
 body {
+  background: var(--bg-hue);
+  color: var(--mean-hue);
+  font: 13pt notosans;
   max-width: 48em;
   margin: 2em auto;
   padding: 1em;
@@ -42,15 +68,17 @@ main {
   padding-bottom: 1em;
 }
 
+header {
+  margin: 0 0 1em 0;
+}
+
 footer {
   font-size: smaller;
   text-align: center;
-  border-top: 1px solid black;
 }
 
 h1 {
   font-size: 1.5em;
-  margin: 0 0 1em 0;
 }
 
 h2 {
@@ -62,7 +90,7 @@ h3 {
 }
 
 a {
-  color: forestgreen;
+  color: var(--link-hue);
   text-decoration: none;
 }
 
@@ -76,6 +104,14 @@ a:hover {
 
 .justify {
   text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.slant {
+  font-style: italic;
 }
 
 .sc {
@@ -94,16 +130,20 @@ a:hover {
   font-size: smaller;
 }
 
-.large {
+.great {
   font-size: large;
 }
 
-.larger {
+.greater {
   font-size: larger;
 }
 
 .left {
   text-align: left;
+}
+
+.midst {
+  text-align: center;
 }
 
 .right {
@@ -112,6 +152,31 @@ a:hover {
 
 .unbold {
   font-weight: normal;
+}
+
+nav>ul {
+  display: flex;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav li {
+  flex: 1 1 0px;
+  text-align: center;
+}
+
+nav li li small {
+  display: block;
+  font-size: small;
+  color: darkseagreen;
+  line-height: 1;
+  padding-bottom: 0.5em;
 }
 
 .flexbox {
@@ -178,6 +243,7 @@ ul, ol, dl {
 }
 
 /* Why can't I tag <ul> instead of <li>? */
+/* Over a year later, I still do not know. */
 ul li {
   list-style-type: disc;
 }
@@ -198,9 +264,29 @@ dd {
   margin-left: 2em;
 }
 
+input, select {
+  border: 1px solid var(--mean-hue);
+  font: inherit;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+  -webkit-appearance: textfield;
+}
+
+option {
+  font: notosans;
+}
+
 table {
   border-collapse: collapse;
   white-space: nowrap;
+}
+
+.evenfill {
+  width: 100%;
+  table-layout: fixed;
 }
 
 th {
@@ -209,7 +295,7 @@ th {
 
 th, td {
   padding: 0.25em 0.5em;
-  border: 1px solid black;
+  border: 1px solid var(--mean-hue);
 }
 
 .day {

@@ -1,0 +1,135 @@
+#leer {
+  display: block;
+}
+
+#likeness {
+  position: relative;
+  width: 64vmin;
+  height: 64vmin;
+  margin-left: auto;
+  margin-right: auto
+}
+
+#eye, .eyeball, #nose, #lips, #mouth, .tooth {
+  position: absolute;
+  background: lightblue;
+}
+
+#eye {
+  top: 8vmin;
+  width: 24vmin;
+  height: 24vmin;
+  border-radius: 12vmin;
+  background-image: repeating-radial-gradient(lightblue, #9cc7d5 6.25%, lightblue 12.5%);
+}
+
+#eye:before {
+  content: "";
+  position: absolute;
+  width: 24vmin;
+  height: 24vmin;
+  background: lightblue;
+  border-radius: 12vmin;
+  animation: eyen 7s infinite alternate;
+}
+
+#eye:first-child {
+  left: 4vmin;
+}
+
+#eye:last-child {
+  right: 4vmin;
+}
+
+.eyeball {
+  top: 6vmin;
+  left: 6vmin;
+  width: 12vmin;
+  height: 12vmin;
+  background-image: repeating-radial-gradient(black, #333 6.25%, black 12.5%);
+  border-radius: 8vmin;
+}
+
+.eyeball:before {
+  content: "";
+  position: absolute;
+  width: 12vmin;
+  height: 12vmin;
+  background: black;
+  border-radius: 8vmin;
+  animation: eyeballen 5s infinite alternate;
+}
+
+#nose {
+  top: 8vmin;
+  left: 28vmin;
+  width: 8vmin;
+  height: 24vmin;
+  border-radius: 2vmin;
+  animation: nosen 7s infinite alternate;
+}
+
+#lips {
+  top: 32vmin;
+  left: 4vmin;
+  width: 56vmin;
+  height: 24vmin;
+  border-radius: 8vmin;
+}
+
+#mouth {
+  top: 6vmin;
+  left: 6vmin;
+  width: 44vmin;
+  height: 12vmin;
+  background: red;
+  border-radius: 4vmin;
+  animation: mouthen 3s infinite alternate;
+}
+
+.tooth {
+  background: none;
+  top: 0vmin;
+  border-left: 4vmin solid transparent;
+  border-right: 4vmin solid transparent;
+  border-top: 18vmin solid white;
+  animation: toothen 2s infinite alternate;
+}
+
+.tooth:first-child {
+  left: 8vmin;
+}
+
+.tooth:last-child {
+  right: 8vmin;
+}
+
+@keyframes eyen {
+  0% { opacity: 1; }
+  100% { opacity: 0.9; }
+}
+
+@keyframes eyeballen {
+  0% { background: black; opacity: 1; }
+  100% { background: #333; opacity: 0.9; }
+}
+
+@keyframes nosen {
+  0% { transform: scaleX(1); }
+  100% { transform: scaleX(1.01); }
+}
+
+@keyframes mouthen {
+  0% { background: red; transform: scaleX(1); }
+  100% { background: #f01; transform: scale(0.99, 0.99); }
+}
+
+@keyframes toothen {
+  0% { border-top: 18vmin solid white; transform: scaleX(1); }
+  100% { border-top: 18vmin solid #eff; transform: scaleX(0.99); }
+}
+
+#man p {
+  display: flex;
+  justify-content: space-between;
+}
