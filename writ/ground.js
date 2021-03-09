@@ -33,4 +33,7 @@ function see() {
 
 document.getElementsByTagName("head")[0].innerHTML += HEADWORD;
 document.getElementsByTagName("footer")[0].innerHTML += FOOTERWORD;
+
+if (localStorage.getItem("staves") == null) localStorage.setItem("staves", STAVES[0]);
+
 see();
