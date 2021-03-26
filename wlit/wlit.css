@@ -119,6 +119,10 @@ a:hover {
   font-variant: small-caps;
 }
 
+.upper {
+  text-transform: uppercase;
+}
+
 .no-height {
   line-height: 0;
 }
